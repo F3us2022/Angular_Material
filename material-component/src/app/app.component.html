@@ -47,3 +47,33 @@
 </div> -->
 
 <!----------------------------------------------------- BUTTON TOGGLE ------------------------------------------------>
+
+<div>
+  <mat-button-toggle #toggleBtn>toggle</mat-button-toggle>
+  {{ toggleBtn.checked }}
+</div>
+
+<div class="mat-body-2">Single Selection</div>
+
+<div>
+  <mat-button-toggle-group #matButtonValue="matButtonToggleGroup">
+    <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="react">React</mat-button-toggle>
+    <mat-button-toggle value="vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+{{ matButtonValue.value }}
+
+<div class="mat-body-2">Multiple Selection</div>
+
+<div>
+  <mat-button-toggle-group
+    #matButtonValueMultiple="matButtonToggleGroup"
+    multiple
+  >
+    <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="react">React</mat-button-toggle>
+    <mat-button-toggle value="vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+{{ matButtonValueMultiple.value }}
