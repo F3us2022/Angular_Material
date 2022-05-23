@@ -86,7 +86,7 @@
 <mat-icon>Delete</mat-icon> -->
 
 <!----------------------------------------------------- BADGES ------------------------------------------------>
-<br />
+<!-- <br />
 <div>
   <span matBadge="2">notification</span>
 </div>
@@ -120,4 +120,19 @@
 
 <div><span matBadge="5" matBadgeColor="primary">small</span></div>
 <div><span matBadge="5" matBadgeColor="accent">medium</span></div>
-<div><span matBadge="5" matBadgeColor="warn">large</span></div>
+<div><span matBadge="5" matBadgeColor="warn">large</span></div> -->
+
+<!------------------------------------------------- PROGRESS SPINNER ---------------------------------------------->
+
+<mat-spinner></mat-spinner>
+
+<mat-progress-spinner
+  class="example-margin"
+  [color]="color"
+  [mode]="mode"
+  [value]="value"
+>
+</mat-progress-spinner>
+
+<mat-spinner *ngIf="spinner"></mat-spinner>
+<button (click)="loadBtn()">CLICK</button>
