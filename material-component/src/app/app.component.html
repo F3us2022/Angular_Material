@@ -48,7 +48,7 @@
 
 <!----------------------------------------------------- BUTTON TOGGLE ------------------------------------------------>
 
-<div>
+<!-- <div>
   <mat-button-toggle #toggleBtn>toggle</mat-button-toggle>
   {{ toggleBtn.checked }}
 </div>
@@ -76,4 +76,48 @@
     <mat-button-toggle value="vue">Vue</mat-button-toggle>
   </mat-button-toggle-group>
 </div>
-{{ matButtonValueMultiple.value }}
+{{ matButtonValueMultiple.value }} -->
+
+<!----------------------------------------------------- ICONS ------------------------------------------------>
+<!-- 
+<mat-icon>home</mat-icon>
+<mat-icon>bolt</mat-icon>
+<mat-icon>Menu</mat-icon>
+<mat-icon>Delete</mat-icon> -->
+
+<!----------------------------------------------------- BADGES ------------------------------------------------>
+<br />
+<div>
+  <span matBadge="2">notification</span>
+</div>
+
+<div>
+  <span matBadge="5" matBadgePosition="below before">notification</span>
+</div>
+<div>
+  <span matBadge="5" matBadgePosition="below after">notification</span>
+</div>
+<div>
+  <span matBadge="5" matBadgePosition="above before">notification</span>
+</div>
+<div>
+  <span matBadge="5" matBadgePosition="above after">notification</span>
+</div>
+
+<div><span matBadge="5" matBadgeSize="small">small</span></div>
+<div><span matBadge="5" matBadgeSize="medium">medium</span></div>
+<div><span matBadge="5" matBadgeSize="large">large</span></div>
+
+<p>Interpolation and conditioning</p>
+
+<div>
+  <span [matBadge]="badgeNum" [matBadgeHidden]="badgeNum === 7"
+    >Notification</span
+  >
+</div>
+
+<div><span matBadge="5" matBadgeOverlap="false">No Overlap</span></div>
+
+<div><span matBadge="5" matBadgeColor="primary">small</span></div>
+<div><span matBadge="5" matBadgeColor="accent">medium</span></div>
+<div><span matBadge="5" matBadgeColor="warn">large</span></div>
